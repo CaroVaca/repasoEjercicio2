@@ -3,7 +3,6 @@
 let comisionA: number[] = [8, 5, 7, 10, 9, 2, 4, 8, 6, 8];
 let comisionB: number[] = [3, 6, 8, 5, 4, 7, 7, 4, 6, 8];
 let comisionC: number[] = [7, 6, 9, 8, 9, 8, 5, 7, 10, 9];
-let minimaNota: number = 11;
 let promedio: number;
 let indice: number;
 
@@ -29,6 +28,7 @@ function cantDesaprobadosporComision(comision: number[]): number {
 }
 //funcion que me devuelve la menor nota  de una comision
 function menorNota(comision: number[]) {
+  let minimaNota: number = 11;
   for (indice = 0; indice < comision.length; indice++) {
     if (comision[indice] < minimaNota) {
       minimaNota = comision[indice];
